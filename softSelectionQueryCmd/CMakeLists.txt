@@ -10,7 +10,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/modules)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 # Setting default building version
-set(MAYA_VERSION 2016 CACHE STRING "Maya version")
+set(MAYA_VERSION 2020 CACHE STRING "Maya version")
 
 # Setting plugin version
 set(MAYA_PLUGIN_MAJOR "1")

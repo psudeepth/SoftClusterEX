@@ -2,7 +2,7 @@
 
 mkdir -p bin
 
-declare -a maya_versions=(2011 2012 2013 2014 2015 2016 2017)
+declare -a maya_versions=(2020)
 
 # output binary name
 if [ "$(uname -s)" == "Darwin" ]; then
@@ -12,7 +12,7 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 fi
 
 output_bin_file=./build/$output_name
-maya_sdk_dir=/Volumes/Data/Libs/MayaSDK
+maya_sdk_dir=/opt/local/mayaDevKits
 
 for v in "${maya_versions[@]}"
 do
